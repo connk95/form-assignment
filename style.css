@@ -3,6 +3,10 @@
     src: url("../assignment/Norse-Bold.otf");
 }
 
+input {
+    appearance: none;
+}
+
 body{
     display: flex;
     flex-direction: row;
@@ -12,10 +16,10 @@ body{
 .left {
     display: flex;
     flex-direction: column;
-    background-image: url("./halie-west-25xggax4bSA-unsplash.jpg");
-    width: 38rem;
+    background-image: url("./photo-1585202900225-6d3ac20a6962.avif");
+    width: 32rem;
     height: auto;
-    background-size: auto;
+    background-size: 38rem;
     background-position: center center;
 }
 
@@ -45,6 +49,7 @@ body{
     flex-direction: column;
     font-family: Helvetica, sans-serif;
     width: 62rem;
+    height: 55rem;
     background-color: #f9fafb;
 }
 
@@ -68,6 +73,7 @@ button, input, select, textarea {
     flex-direction: column;
     background-color: #ffffff;
     box-shadow: 0 6px 4px -2px #dbdbdc;
+    padding: 20px 0 20px 0;
 }
 
 fieldset {
@@ -77,14 +83,14 @@ fieldset {
 
 .form > p {
     font-size: 24px;
-    padding: 1rem 10rem 1rem 3rem;
+    padding: 0rem 10rem 0rem 3rem;
     margin: 0 0 0 0;
 }
 
 .form-row {
     display: flex;
     flex-direction: row;
-    margin: 1rem 0 2rem 0;
+    margin: 20px 0 0 0;
 }
 
 input, label {
@@ -129,4 +135,26 @@ a:link, a:visited, a:hover, a:active {
     text-decoration: none; 
     color: #596d48;
 }
+
+#match {
+    color: red;
+    font-size: 12px;
+    margin-top: 0;
+}
+
+input:focus {
+    box-shadow: 2px 2px 4px #dbdbdc;
+}
+
+fieldset > div > p {
+    margin-top: 0;
+}
+
+
+/* add a shadow to the focused input */
+/* create a simple validation to ensure the two passwords match */
+
+/* #user_password:invalid, #confirm_password:invalid {
+    border: 1px solid red;
+  } */
 
